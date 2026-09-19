@@ -102,18 +102,18 @@ import strip3 from "../products-image/ss-nickel-strips.webp";
 const galleryData = [
   {
     id: 1,
-    src: pipe1,
-    category: "pipes",
+    src: buttweldfitting1,
+    category: "buttweld-fittings",
   },
   {
     id: 2,
-    src: pipe2,
-    category: "pipes",
+    src: buttweldfitting3,
+    category: "buttweld-fittings",
   },
   {
     id: 3,
-    src: pipe3,
-    category: "pipes",
+    src: buttweldfitting4,
+    category: "buttweld-fittings",
   },
   {
     id: 4,
