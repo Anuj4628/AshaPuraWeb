@@ -12,7 +12,7 @@ import "../styles/Gallery.css"; // Create this file for specific gallery styles
 import pipe1 from "../products-image/alloy-20-pipes.webp";
 import pipe2 from "../products-image/alloy-20-pipes.webp";
 import pipe3 from "../products-image/nickel-alloy-pipes-supplier.webp";
-import pipe4 from "../products-image/ss-hastelloy-b2-pipes.webp";
+import pipe4 from "../products-image/ss-pipe-bends.webp";
 
 import tube1 from "../products-image/ss-alloy-28-tubes.webp";
 import tube2 from "../products-image/ss-duplex-super-duplex-tubes.webp";
@@ -118,7 +118,7 @@ const galleryData = [
   {
     id: 4,
     src: pipe4,
-    category: "pipes",
+    category: "buttweld-fittings",
   },
   {
     id: 5,
