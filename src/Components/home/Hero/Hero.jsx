@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
-import hero1 from "../../../assets/images/hero-1.png";
-import hero2 from "../../../assets/images/hero-2.webp";
-import hero3 from "../../../assets/images/hero-3.webp";
+import heroStockyard from "../../../assets/images/hero-stockyard-piping.png";
+import heroFittings from "../../../assets/images/hero-fittings.jpg";
+import heroFasteners from "../../../assets/images/hero-fasteners.png";
 
 // Product Images
 import p1 from "../../../products-image/ss-copper-coils.webp";
@@ -36,7 +36,7 @@ import "./Hero.css";
 
 const slides = [
   {
-    image: hero1,
+    image: heroStockyard,
     tag: "Manufacturer | Stockist | Exporters",
     title: "Stainless Steel Round Bar, Sheets, Tubes, Pipes & Flanges",
     description:
@@ -44,7 +44,7 @@ const slides = [
     products: [p1, p2, p3, p4, p5, p6, p7, p8]
   },
   {
-    image: hero2,
+    image: heroFittings,
     tag: "Extensive Product Range",
     title: "Duplex, Super Duplex, Monel & Hastelloy",
     description:
@@ -52,7 +52,7 @@ const slides = [
     products: [p9, p10, p11, p12, p13, p14, p15, p16]
   },
   {
-    image: hero3,
+    image: heroFasteners,
     tag: "ISO 9001:2015 Certified",
     title: "Carbon Steel, Alloy Steel & Nickel Alloys",
     description:
