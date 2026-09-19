@@ -1,0 +1,255 @@
+import "./Footer.css";
+
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaGlobe,
+} from "react-icons/fa";
+
+import { Link } from "react-router-dom";
+
+import logo from "../../../assets/images/logo.webp";
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="container footer-grid">
+        {/* Company Info */}
+        <div className="footer-company">
+          <img src={logo} alt="Shree Ashapura Metal & Alloys" />
+
+          <p>
+            Shree Ashapura Metal & Alloys Pvt. Ltd. is a Leading Manufacturer,
+            Supplier And Exporter Of Premium Stainless Steel, Alloy Steel,
+            Duplex Steel, Nickel Alloy and Industrial Piping Products Worldwide.
+          </p>
+
+          <div className="socials">
+            <a href="#">
+              <FaFacebookF />
+            </a>
+            <a href="#">
+              <FaLinkedinIn />
+            </a>
+            <a href="#">
+              <FaInstagram />
+            </a>
+          </div>
+        </div>
+
+        {/* Quick Links */}
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/products">Products</Link>
+            </li>
+            <li>
+              <Link to="/materials">Materials</Link>
+            </li>
+            <li>
+              <Link to="/gallery">Gallery</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Products */}
+        <div>
+          <h4>Our Products</h4>
+          <ul>
+            <li>
+              <Link to="/products/coils">Coils</Link>
+            </li>
+            <li>
+              <Link to="/products/pipes">Pipes</Link>
+            </li>
+            <li>
+              <Link to="/products/tubes">Tubes</Link>
+            </li>
+            <li>
+              <Link to="/products/plates">Plates</Link>
+            </li>
+            <li>
+              <Link to="/products/sheets">Sheets</Link>
+            </li>
+            <li>
+              <Link to="/products/round-bars">Round Bars</Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div className="footer-contact">
+          <h4>Contact Us</h4>
+
+          {/* Registered & Head Office */}
+          <div className="contact-row">
+            <FaMapMarkerAlt className="contact-icon" />
+            <div>
+              <p>
+                <strong>Registered &amp; Head Office</strong>
+                <br />
+                Building No. 58, 1st Floor, Shop No. 1, 1st Kumbharwada, Mumbai
+                - 400004, Maharashtra, India.
+              </p>
+            </div>
+          </div>
+
+          {/* Call Us */}
+          <div className="contact-row">
+            <FaPhoneAlt className="contact-icon" />
+            <div>
+              <p>
+                <strong>Call Us</strong>
+              </p>
+
+              <div className="phone-row-footer">
+                <span className="phone-label-footer">Landline</span>
+                <span className="phone-numbers-footer">
+                  <a href="tel:+912267438386">+91 22 6743 8386</a>
+                </span>
+                <span className="phone-numbers-footer">
+                  <a href="tel:+912266362062">+91 22 6636 2062</a>
+                </span>
+              </div>
+
+              <div className="phone-row-footer">
+                <span className="phone-label-footer">Mr. B. H. Jain</span>
+                <span className="phone-numbers-footer">
+                  <a href="tel:+917666989991">+91 76669 89991</a>
+                </span>
+              </div>
+
+              <div className="phone-row-footer">
+                <span className="phone-label-footer">
+                  Mr. ShyamSingh Rajput
+                </span>
+                <span className="phone-numbers-footer">
+                  <a href="tel:+919326883622">+91 93268 83622</a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Email Us */}
+          <div className="contact-row">
+            <FaEnvelope className="contact-icon" />
+            <div>
+              <p>
+                <strong>Email Us</strong>
+              </p>
+              <p>
+                <a href="mailto:sales@shreeashapurametal.com">
+                  sales@shreeashapurametal.com
+                </a>
+                <br />
+                <a href="mailto:shreeashapura1@gmail.com">
+                  shreeashapura1@gmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          {/* Website */}
+          <div className="contact-row">
+            <FaGlobe className="contact-icon" />
+            <div>
+              <p>
+                <strong>Website</strong>
+              </p>
+              <p>
+                <a
+                  href="https://www.shreeashapurametal.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  www.shreeashapurametal.com
+                </a>
+                <br />
+                <a
+                  href="https://www.metalsupplier.in"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  www.metalsupplier.in
+                </a>
+              </p>
+            </div>
+          </div>
+
+          {/* Branch Office */}
+          <div className="contact-row">
+            <FaMapMarkerAlt className="contact-icon" />
+            <div>
+              <p>
+                <strong>Branch Office</strong>
+                <br />
+                Shree Ashapura Metal & Alloys Pvt Ltd,
+                <br />
+                Building No. 60/62,
+                <br />
+                Shop No. 1, Khandke Building, 1st Kumbharwada Lane,
+                <br />
+                Mumbai - 400004
+              </p>
+              <p>
+                <strong>Phone:</strong>{" "}
+                <a href="tel:+919223289991">+91 92232 89991</a>
+              </p>
+            </div>
+          </div>
+
+          {/* Factory Address */}
+          <div className="contact-row">
+            <FaMapMarkerAlt className="contact-icon" />
+            <div>
+              <p>
+                <strong>Factory Address</strong>
+                <br />
+                Shree Ashapura Metal & Alloys Pvt Ltd,
+                <br />
+                Gala No. X/5, Kasturi Industrial Estate,
+                <br />
+                Fatak Road, Bhayandar East - 401105
+              </p>
+              <p>
+                <strong>Phone:</strong>{" "}
+                <a href="tel:+919869189991">+91 98691 89991</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="footer-bottom">
+        <div className="container footer-bottom-content">
+          <p>
+            © 2026 Shree Ashapura Metal &amp; Alloys Pvt. Ltd. All Rights
+            Reserved. | Design and SEO by Sunmarg India.
+          </p>
+          <div className="footer-links">
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
