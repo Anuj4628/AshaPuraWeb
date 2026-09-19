@@ -106,7 +106,7 @@ function Footer() {
 
               <div className="phone-lines">
                 <div className="phone-line">
-                  <span className="phone-tag">Landline:</span>
+                  <span className="phone-tag">Landline :-</span>
                   <div className="phone-anchors">
                     <a href="tel:+912267438386">+91 22 6743 8386</a>
                     <span className="phone-divider">/</span>
@@ -115,14 +115,14 @@ function Footer() {
                 </div>
 
                 <div className="phone-line">
-                  <span className="phone-tag">Mr. B. H. Jain:</span>
+                  <span className="phone-tag">Mr. B. H. Jain :-</span>
                   <div className="phone-anchors">
                     <a href="tel:+917666989991">+91 76669 89991</a>
                   </div>
                 </div>
 
                 <div className="phone-line">
-                  <span className="phone-tag">Mr. ShyamSingh Rajput:</span>
+                  <span className="phone-tag">Mr. ShyamSingh Rajput :-</span>
                   <div className="phone-anchors">
                     <a href="tel:+919326883622">+91 93268 83622</a>
                   </div>
@@ -185,10 +185,10 @@ function Footer() {
               Building No. 58, 1st Floor, Shop No. 1, 1st Kumbharwada, Mumbai - 400004, Maharashtra, India.
             </p>
             <div className="location-contact-num">
-              <strong>Landline:</strong>{" "}
-              <a href="tel:+912267438386">+91 22 6743 8386</a>
+              <strong>Landline:-</strong>{" "}
+              <a href="tel:-+912267438386">+91 22 6743 8386</a>
               <span className="phone-divider"> / </span>
-              <a href="tel:+912266362062">+91 22 6636 2062</a>
+              <a href="tel:-+912266362062">+91 22 6636 2062</a>
             </div>
           </div>
 
@@ -203,8 +203,8 @@ function Footer() {
               Building No. 60/62, Shop No. 1, Khandke Building, 1st Kumbharwada Lane, Mumbai - 400004
             </p>
             <div className="location-contact-num">
-              <strong>Phone:</strong>{" "}
-              <a href="tel:+919223289991">+91 92232 89991</a>
+              <strong>Phone :-</strong>{" "}
+              <a href="tel:-+919223289991">+91 92232 89991</a>
             </div>
           </div>
 
@@ -219,8 +219,8 @@ function Footer() {
               Gala No. B/13, Kasturi Industrial Estate, Fatak Road, Bhayandar East - 401105
             </p>
             <div className="location-contact-num">
-              <strong>Phone:</strong>{" "}
-              <a href="tel:+919869189991">+91 98691 89991</a>
+              <strong>Phone :-</strong>{" "}
+              <a href="tel:-+919869189991">+91 98691 89991</a>
             </div>
           </div>
         </div>

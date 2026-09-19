@@ -108,13 +108,20 @@ MAIN NAVBAR
 .desktop-badges {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
 .desktop-badges img {
-  height: 50px;
+  height: 44px;
+  max-width: 105px;
   width: auto;
   object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.desktop-badges img:hover {
+  transform: scale(1.05);
 }
 
 /* =========================
@@ -407,7 +414,19 @@ HAMBURGER
     letter-spacing: 0.7px;
   }
 
-  /* Hide ISO/MSME badges to free horizontal space */
+  /* Responsive scaling for certification badges */
+  .desktop-badges {
+    display: flex !important;
+    gap: 8px !important;
+  }
+
+  .desktop-badges img {
+    height: 36px !important;
+    max-width: 85px !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1150px) {
   .desktop-badges {
     display: none !important;
   }

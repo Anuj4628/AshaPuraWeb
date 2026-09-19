@@ -111,7 +111,7 @@ function ContactSection() {
 
               <div className="contact-phone-group">
                 <div className="phone-row">
-                  <span className="phone-label">Landline:</span>
+                  <span className="phone-label">Landline :-</span>
                   <div className="phone-numbers">
                     <a href="tel:+912267438386">+91 22 6743 8386</a>
                     <span className="separator">/</span>
@@ -120,14 +120,14 @@ function ContactSection() {
                 </div>
 
                 <div className="phone-row">
-                  <span className="phone-label">Mr. B. H. Jain:</span>
+                  <span className="phone-label">Mr. B. H. Jain :-</span>
                   <div className="phone-numbers">
                     <a href="tel:+917666989991">+91 76669 89991</a>
                   </div>
                 </div>
 
                 <div className="phone-row">
-                  <span className="phone-label">Mr. ShyamSingh Rajput:</span>
+                  <span className="phone-label">Mr. ShyamSingh Rajput :-</span>
                   <div className="phone-numbers">
                     <a href="tel:+919326883622">+91 93268 83622</a>
                   </div>
@@ -197,7 +197,7 @@ function ContactSection() {
                 Building No. 58, 1st Floor, Shop No. 1, 1st Kumbharwada, Mumbai - 400004, Maharashtra, India.
               </p>
               <div className="loc-phone">
-                <strong>Landline:</strong>{" "}
+                <strong>Landline :-</strong>{" "}
                 <a href="tel:+912267438386">+91 22 6743 8386</a>
                 <span className="separator"> / </span>
                 <a href="tel:+912266362062">+91 22 6636 2062</a>
@@ -216,7 +216,7 @@ function ContactSection() {
                 Building No. 60/62, Shop No. 1, Khandke Building, 1st Kumbharwada Lane, Mumbai - 400004
               </p>
               <div className="loc-phone">
-                <strong>Phone:</strong>{" "}
+                <strong>Phone :-</strong>{" "}
                 <a href="tel:+919223289991">+91 92232 89991</a>
               </div>
             </div>
@@ -233,7 +233,7 @@ function ContactSection() {
                 Gala No. B/13, Kasturi Industrial Estate, Fatak Road, Bhayandar East - 401105
               </p>
               <div className="loc-phone">
-                <strong>Phone:</strong>{" "}
+                <strong>Phone :-</strong>{" "}
                 <a href="tel:+919869189991">+91 98691 89991</a>
               </div>
             </div>

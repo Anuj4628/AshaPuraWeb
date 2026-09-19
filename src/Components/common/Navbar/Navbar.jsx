@@ -53,6 +53,8 @@ import logo from "../../../assets/images/logo.webp";
 import logoname from "../../../assets/images/logo-name.webp";
 import isologo from "../../../assets/images/iso-logo.webp";
 import msme from "../../../assets/images/msme-logo.webp";
+import uafLogo from "../../../assets/images/uaf-logo.png";
+import aqsrLogo from "../../../assets/images/aqsr-logo.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -601,6 +603,8 @@ function Navbar() {
           <div className="certifications-logo desktop-badges">
             <img src={isologo} alt="ISO Logo" />
             <img src={msme} alt="MSME Logo" />
+            <img src={uafLogo} alt="UAF Logo" />
+            <img src={aqsrLogo} alt="AQSR Logo" />
           </div>
         </div>
       </div>

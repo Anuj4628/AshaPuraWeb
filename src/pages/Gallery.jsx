@@ -18,9 +18,9 @@ import tube1 from "../products-image/ss-alloy-28-tubes.webp";
 import tube2 from "../products-image/ss-duplex-super-duplex-tubes.webp";
 import tube3 from "../products-image/ss-hastelloy-tubes.webp";
 import tube4 from "../products-image/ss-highperformance-tubes.webp";
+import tubeCapillary from "../products-image/ss-capillary-tubes.png";
 
 import coil1 from "../products-image/ss-coils.webp";
-import coil2 from "../products-image/ss-copper-coils.webp";
 import coil3 from "../products-image/ss-crcoils.webp";
 import coil4 from "../products-image/ss-hrcoils.webp";
 
@@ -87,7 +87,8 @@ import circle3 from "../products-image/ss-industrial-circles.webp";
 import ring1 from "../products-image/ss-forged-rings.webp";
 import ring2 from "../products-image/ss-duplex-rings.webp";
 import ring3 from "../products-image/ss-nickel-alloy-rings.webp";
-import ring4 from "../products-image/ss-carbon-rings.webp";
+import ring4 from "../products-image/ss-steel-rings.png";
+import aluminiumFitting1 from "../products-image/aluminium-fittings.png";
 
 
 import angleChannel1 from "../products-image/ss-regular-angles.webp";
@@ -95,7 +96,6 @@ import angleChannel2 from "../products-image/ss-regular-channels.webp";
 import angleChannel3 from "../products-image/ss-carbon-angles-channels.webp";
 
 import strip1 from "../products-image/ss-strips.webp";
-import strip2 from "../products-image/ss-strip-wound-hose.webp";
 import strip3 from "../products-image/ss-nickel-strips.webp";
 
 
@@ -123,31 +123,31 @@ const galleryData = [
   {
     id: 5,
     src: tube1,
-    category: "tubes",
+    category: "pipes",
   },
   {
     id: 6,
     src: tube2,
-    category: "tubes",
+    category: "pipes",
   },
   {
     id: 7,
     src: tube3,
-    category: "tubes",
+    category: "pipes",
   },
   {
     id: 8,
     src: tube4,
+    category: "pipes",
+  },
+  {
+    id: 72,
+    src: tubeCapillary,
     category: "tubes",
   },
   {
     id: 9,
     src: coil1,
-    category: "coils",
-  },
-  {
-    id: 10,
-    src: coil2,
     category: "coils",
   },
   {
@@ -492,16 +492,16 @@ const galleryData = [
     category: "strips", 
   },
   {
-    id: 62,
-    src: strip2,
-
-    category: "strips", 
-  },
-  {
     id: 63,
     src: strip3,
 
     category: "strips", 
+  },
+  {
+    id: 73,
+    src: aluminiumFitting1,
+
+    category: "aluminium-fitting",
   },
   
 ];
@@ -525,6 +525,7 @@ const categories = [
   { label: "Rings", value: "rings" },
   { label: "Angles & Channels", value: "angles-channels" },
   { label: "Strips", value: "strips" },
+  { label: "Aluminium Fitting", value: "aluminium-fitting" },
 ];
 
 const Gallery = () => {
