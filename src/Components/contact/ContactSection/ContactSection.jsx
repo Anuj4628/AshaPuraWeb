@@ -194,6 +194,12 @@ function ContactSection() {
               <p className="loc-address">
                 Building No. 58, 1st Floor, Shop No. 1, 1st Kumbharwada, Mumbai - 400004, Maharashtra, India.
               </p>
+              <div className="loc-phone">
+                <strong>Landline:</strong>{" "}
+                <a href="tel:+912267438386">+91 22 6743 8386</a>
+                <span className="separator"> / </span>
+                <a href="tel:+912266362062">+91 22 6636 2062</a>
+              </div>
             </div>
 
             {/* Branch Office / Godown */}
