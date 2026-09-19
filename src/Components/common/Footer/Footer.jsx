@@ -180,6 +180,8 @@ function Footer() {
               <h5>Registered &amp; Head Office</h5>
             </div>
             <p className="location-address">
+              Shree Ashapura Metal &amp; Alloys Pvt Ltd
+              <br />
               Building No. 58, 1st Floor, Shop No. 1, 1st Kumbharwada, Mumbai - 400004, Maharashtra, India.
             </p>
             <div className="location-contact-num">
@@ -196,7 +198,9 @@ function Footer() {
               <h5>Branch Office/Godown</h5>
             </div>
             <p className="location-address">
-              Shree Ashapura Metal &amp; Alloys Pvt Ltd, Building No. 60/62, Shop No. 1, Khandke Building, 1st Kumbharwada Lane, Mumbai - 400004
+              Shree Ashapura Metal &amp; Alloys Pvt Ltd
+              <br />
+              Building No. 60/62, Shop No. 1, Khandke Building, 1st Kumbharwada Lane, Mumbai - 400004
             </p>
             <div className="location-contact-num">
               <strong>Phone:</strong>{" "}
@@ -210,7 +214,9 @@ function Footer() {
               <h5>Factory Address</h5>
             </div>
             <p className="location-address">
-              Shree Ashapura Metal &amp; Alloys Pvt Ltd, Gala No. B/13, Kasturi Industrial Estate, Fatak Road, Bhayandar East - 401105
+              Shree Ashapura Metal &amp; Alloys Pvt Ltd
+              <br />
+              Gala No. B/13, Kasturi Industrial Estate, Fatak Road, Bhayandar East - 401105
             </p>
             <div className="location-contact-num">
               <strong>Phone:</strong>{" "}
