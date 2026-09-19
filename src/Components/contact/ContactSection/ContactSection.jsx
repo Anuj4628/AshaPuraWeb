@@ -37,129 +37,127 @@ function ContactSection() {
 
   return (
     <section className="contact-section">
-      <div className="container contact-layout">
-        <div className="contact-form-card">
-          <h2>We'd Love To Hear From You</h2>
+      <div className="container">
+        {/* Main 2-Column Layout: Form & Direct Contact */}
+        <div className="contact-layout">
+          {/* Left Column: Form */}
+          <div className="contact-form-card">
+            <h2>We'd Love To Hear From You</h2>
+            <p>
+              Send us your requirement and our team will get back to you shortly.
+            </p>
 
-          <p>
-            Send us your requirement and our team will get back to you shortly.
-          </p>
+            <form onSubmit={onSubmit}>
+              <div className="form-row">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
 
-          <form onSubmit={onSubmit}>
-            <div className="form-row">
-              <input type="text" name="name" placeholder="Your Name" required />
+              <div className="form-row">
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Phone Number"
+                  required
+                />
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
 
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
                 required
               />
-            </div>
 
-            <div className="form-row">
-              <input
-                type="text"
-                name="phone"
-                placeholder="Phone Number"
-                required
-              />
+              <button type="submit">Send Message</button>
+            </form>
 
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
-            </div>
+            <span
+              style={{
+                display: "block",
+                marginTop: "15px",
+                fontWeight: "500",
+                color: result.includes("Error") ? "red" : "green",
+              }}
+            >
+              {result}
+            </span>
+          </div>
 
-            <textarea
-              name="message"
-              rows="6"
-              placeholder="Your Message"
-              required
-            />
+          {/* Right Column: Direct Contact Info (Call, Email, Web) */}
+          <div className="contact-direct-card">
+            <h3>Direct Contact</h3>
+            <p className="direct-subtitle">
+              Get in touch with our sales and technical support team directly.
+            </p>
 
-            <button type="submit">Send Message</button>
-          </form>
-
-          <span
-            style={{
-              display: "block",
-              marginTop: "15px",
-              fontWeight: "500",
-              color: result.includes("Error") ? "red" : "green",
-            }}
-          >
-            {result}
-          </span>
-        </div>
-
-        <div className="contact-cards">
-          {/* First Container - Registered Office + Email + Website + Call Us */}
-          <div className="info-card">
-            <div>
+            {/* Call Us */}
+            <div className="contact-info-block">
               <h4 className="contact-heading">
-                <FaMapMarkerAlt className="contact-icon" />
-                Registered & Head Office
-              </h4>
-              <p>
-                Building No. 58, 1st Floor, Shop No. 1,
-                <br />
-                1st Kumbharwada, Mumbai - 400004,
-                <br />
-                Maharashtra, India.
-              </p>
-
-              {/* Call Us Section */}
-              <h4 className="contact-heading" style={{ marginTop: "20px" }}>
                 <FaPhoneAlt className="contact-icon" />
                 Call Us
               </h4>
 
-              <div className="phone-row">
-                <span className="phone-label">Landline</span>
-                <span className="phone-numbers">
-                  <a href="tel:+912267438386">+91 22 6743 8386</a>
-                  <span className="separator">  </span>
-                  <a href="tel:+912266362062">+91 22 6636 2062</a>
-                </span>
-              </div>
+              <div className="contact-phone-group">
+                <div className="phone-row">
+                  <span className="phone-label">Landline:</span>
+                  <div className="phone-numbers">
+                    <a href="tel:+912267438386">+91 22 6743 8386</a>
+                    <span className="separator">/</span>
+                    <a href="tel:+912266362062">+91 22 6636 2062</a>
+                  </div>
+                </div>
 
-              <div className="phone-row">
-                <span className="phone-label">Mr. B. H. Jain</span>
-                <span className="phone-numbers">
-                  <a href="tel:+917666989991">+91 76669 89991</a>
-                </span>
-              </div>
+                <div className="phone-row">
+                  <span className="phone-label">Mr. B. H. Jain:</span>
+                  <div className="phone-numbers">
+                    <a href="tel:+917666989991">+91 76669 89991</a>
+                  </div>
+                </div>
 
-              <div className="phone-row">
-                <span className="phone-label">Mr. ShyamSingh Rajput</span>
-                <span className="phone-numbers">
-                  <a href="tel:+919326883622">+91 93268 83622</a>
-                </span>
+                <div className="phone-row">
+                  <span className="phone-label">Mr. ShyamSingh Rajput:</span>
+                  <div className="phone-numbers">
+                    <a href="tel:+919326883622">+91 93268 83622</a>
+                  </div>
+                </div>
               </div>
+            </div>
 
-              <h4 className="contact-heading" style={{ marginTop: "20px" }}>
+            {/* Email Us */}
+            <div className="contact-info-block">
+              <h4 className="contact-heading">
                 <FaEnvelope className="contact-icon" />
                 Email Us
               </h4>
-              <p>
+              <div className="contact-links-list">
                 <a href="mailto:sales@shreeashapurametal.com">
                   sales@shreeashapurametal.com
                 </a>
-              </p>
-              <p>
                 <a href="mailto:shreeashapura1@gmail.com">
                   shreeashapura1@gmail.com
                 </a>
-              </p>
+              </div>
+            </div>
 
-              <h4 className="contact-heading" style={{ marginTop: "20px" }}>
+            {/* Website */}
+            <div className="contact-info-block">
+              <h4 className="contact-heading">
                 <FaGlobe className="contact-icon" />
                 Website
               </h4>
-              <p>
+              <div className="contact-links-list">
                 <a
                   href="https://www.shreeashapurametal.com"
                   target="_blank"
@@ -167,8 +165,6 @@ function ContactSection() {
                 >
                   www.shreeashapurametal.com
                 </a>
-              </p>
-              <p>
                 <a
                   href="https://www.metalsupplier.in"
                   target="_blank"
@@ -176,48 +172,58 @@ function ContactSection() {
                 >
                   www.metalsupplier.in
                 </a>
-              </p>
+              </div>
             </div>
           </div>
+        </div>
 
-          {/* Second Container - Branch Office */}
-          <div className="info-card">
-            <div>
-              <h4 className="contact-heading">
-                <FaMapMarkerAlt className="contact-icon" />
-                Branch Office
-              </h4>
-              <p>
-                Shree Ashapura Metal & Alloys Pvt Ltd, Building No. 60/62,
-                <br />
-                Shop No. 1, Khandke Building, 1st Kumbharwada Lane,
-                <br />
-                Mumbai - 400004
+        {/* Office & Plant Locations Section (Balanced 3-Column Cards) */}
+        <div className="contact-locations-section">
+          <div className="locations-section-header">
+            <h3>Our Offices &amp; Facilities</h3>
+            <p>Visit our corporate office, warehouse, and manufacturing facility in Mumbai</p>
+          </div>
+
+          <div className="contact-locations-grid">
+            {/* Registered & Head Office */}
+            <div className="location-info-card">
+              <div className="loc-card-header">
+                <FaMapMarkerAlt className="loc-icon" />
+                <h4>Registered &amp; Head Office</h4>
+              </div>
+              <p className="loc-address">
+                Building No. 58, 1st Floor, Shop No. 1, 1st Kumbharwada, Mumbai - 400004, Maharashtra, India.
               </p>
-              <p>
+            </div>
+
+            {/* Branch Office / Godown */}
+            <div className="location-info-card">
+              <div className="loc-card-header">
+                <FaMapMarkerAlt className="loc-icon" />
+                <h4>Branch Office/Godown</h4>
+              </div>
+              <p className="loc-address">
+                Shree Ashapura Metal &amp; Alloys Pvt Ltd, Building No. 60/62, Shop No. 1, Khandke Building, 1st Kumbharwada Lane, Mumbai - 400004
+              </p>
+              <div className="loc-phone">
                 <strong>Phone:</strong>{" "}
                 <a href="tel:+919223289991">+91 92232 89991</a>
-              </p>
+              </div>
             </div>
-          </div>
 
-          {/* Third Container - Factory Address */}
-          <div className="info-card">
-            <div>
-              <h4 className="contact-heading">
-                <FaMapMarkerAlt className="contact-icon" />
-                Factory Address
-              </h4>
-              <p>
-                Shree Ashapura Metal & Alloys Pvt Ltd, Gala No. X/5, Kasturi
-                Industrial Estate,
-                <br />
-                Fatak Road, Bhayandar East - 401105
+            {/* Factory Address */}
+            <div className="location-info-card">
+              <div className="loc-card-header">
+                <FaMapMarkerAlt className="loc-icon" />
+                <h4>Factory Address</h4>
+              </div>
+              <p className="loc-address">
+                Shree Ashapura Metal &amp; Alloys Pvt Ltd, Gala No. B/13, Kasturi Industrial Estate, Fatak Road, Bhayandar East - 401105
               </p>
-              <p>
+              <div className="loc-phone">
                 <strong>Phone:</strong>{" "}
                 <a href="tel:+919869189991">+91 98691 89991</a>
-              </p>
+              </div>
             </div>
           </div>
         </div>
